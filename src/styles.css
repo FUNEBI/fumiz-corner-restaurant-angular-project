@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'app/_metronic/layout/homepage/homepage.component.css';
+@import 'app/_metronic/layout/our-services/our-services.component.css';
+@import 'app/_metronic/layout/inter/inter.component.css';

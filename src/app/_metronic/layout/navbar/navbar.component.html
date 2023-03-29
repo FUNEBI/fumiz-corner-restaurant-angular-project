@@ -1,0 +1,33 @@
+<nav class="navbar fixed-top mb-5  navbar-expand-md bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <div class="toolbar" role="banner">
+                <img width="40" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+                />
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-warning"></span>
+      </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto font-bold">
+                <a routerLinkActive="active" class="nav-link active mx-4 " aria-current="page" href="#">Home</a>
+                <div ngbDropdown class="d-inline-block">
+                    <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle>
+                        Menu
+                    </a>
+                    <div ngbDropdownMenu class=" drop-item" aria-labelledby="dropdownBasic1">
+                        <button ngbDropdownItem [routerLink]="['/cocktails']">Cocktails</button>
+                        <button ngbDropdownItem [routerLink]="['/non-alcoholic-drinks']">Non Alcoholic Drinks</button>
+                        <button ngbDropdownItem [routerLink]="['/meal-categories']">Meal Categories</button>
+                    </div>
+                </div>
+
+                <a class="nav-link mx-4 " [routerLink]="['/about-us']">Services</a>
+                <a class="nav-link mx-4 " href="#">Contact</a>
+                <a class="nav-link mx-4 " href="#">About Us</a>
+            </div>
+
+        </div>
+    </div>
+</nav>

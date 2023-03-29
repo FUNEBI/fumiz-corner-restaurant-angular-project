@@ -1,0 +1,21 @@
+nav.navbar {
+    background-color: black;
+}
+
+nav.navbar a {
+    color: gold;
+    font-weight: bolder;
+}
+
+.drop-item {
+    background-color: black;
+}
+
+.drop-item:hover {
+    background-color: gold;
+    background-color: black;
+}
+
+.drop-item button {
+    color: gold;
+}

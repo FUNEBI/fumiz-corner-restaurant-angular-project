@@ -1,0 +1,29 @@
+<!-- <app-navbar>
+</app-navbar> -->
+
+<div class="container-fluid scroll-modal mt-5 py-3">
+
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb" class="my-2">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="text-decoration-none" href="meal-categories">Back</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Meal Category ({{foodCategory}})</li>
+        </ol>
+    </nav>
+    <div class="modal-body mt-5">
+        <h1 class="text-center">{{foodCategory}}</h1>
+        <hr class="mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-12 my-3" *ngFor="let meal of mealList">
+
+                    <img src="{{meal.strMealThumb}}" alt="" class="img-fluid">
+                    <small>{{meal.strMeal}}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="large" color="#FFD700" [fullScreen]="true">
+
+</ngx-spinner>

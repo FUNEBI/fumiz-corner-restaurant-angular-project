@@ -1,0 +1,48 @@
+div.about-us {
+    background-image: url('/assets/images/footer-bg.jpg.webp');
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+}
+
+.about-us h1 {
+    position: absolute;
+    top: 45%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: bolder;
+    left: 45%;
+}
+
+.about-us {
+    margin: 0 auto;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#chefs-area {
+    background-image: url('/assets/images/lights.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#chefs-area h1 {
+    color: white
+}
+
+iframe {
+    width: 95vw;
+    height: 80vh;
+    margin: 0 auto;
+}
+
+
+/* #about-us hr {
+    color: gold;
+    width: 160px;
+    height: 0;
+    margin: 25px 0;
+} */

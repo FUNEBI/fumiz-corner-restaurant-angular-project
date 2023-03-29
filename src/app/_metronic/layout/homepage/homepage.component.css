@@ -1,0 +1,205 @@
+#homepage-container {
+    height: 100vh;
+    background-image: url('/assets/images/bg1.jpg');
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+}
+
+ul.fireflies {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#bvbn {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    color: gold;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#bvbn h1 {
+    font-family: satisfy;
+}
+
+#para {
+    font-family: sofia;
+}
+
+ul.fireflies li {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 73);
+    background-image: radial-gradient(rgb(249, 206, 36) 5%, rgb(254, 179, 4) 25%, rgb(252, 191, 7) 60%);
+    box-shadow: 0 0 5px 2px rgb(250, 193, 93), 0 0 20px 10px rgb(255, 228, 140), 0 0 40px 15px rgb(255, 219, 41);
+    height: 1px;
+    width: 1px;
+    margin-top: 80px;
+    position: absolute;
+    animation: leftright 24s infinite cubic-bezier(0.39, 0, 0.63, 1), updown 8s infinite 1.25s cubic-bezier(0.39, 0, 0.63, 1), blinking 3s infinite;
+}
+
+ul.fireflies li:nth-of-type(1) {
+    animation-delay: 1s;
+    animation-duration: 65s, 81s, 0.05s;
+    animation-fill-mode: backwards, backwards;
+}
+
+ul.fireflies li:nth-of-type(2) {
+    animation-delay: 1s;
+    animation-duration: 81s, 70s, 0.01s;
+    animation-fill-mode: forwards, backwards;
+}
+
+ul.fireflies li:nth-of-type(3) {
+    animation-delay: 1s;
+    animation-duration: 50s, 88s, 0.01s;
+    animation-fill-mode: forwards, backwards;
+}
+
+ul.fireflies li:nth-of-type(4) {
+    animation-delay: 1s;
+    animation-duration: 350s, 95s, 0.03s;
+    animation-fill-mode: backwards, forwards;
+}
+
+ul.fireflies li:nth-of-type(5) {
+    animation-delay: 1s;
+    animation-duration: 60s, 50s, 6s;
+    animation-fill-mode: backwards, backwards;
+}
+
+ul.fireflies li:nth-of-type(6) {
+    animation-delay: 1s;
+    animation-duration: 90s, 41s, 0.01s;
+    animation-fill-mode: forwards, forwards;
+}
+
+ul.fireflies li:nth-of-type(7) {
+    animation-delay: 1s;
+    animation-duration: 30s, 100s, 20s;
+    animation-fill-mode: forwards, backwards;
+}
+
+ul.fireflies li:nth-of-type(8) {
+    animation-delay: 1s;
+    animation-duration: 20s, 16s, 0.01s;
+    animation-fill-mode: backwards, backwards;
+}
+
+ul.fireflies li:nth-of-type(9) {
+    animation-delay: 1s;
+    animation-duration: 20s, 21s, 0.01s;
+    animation-fill-mode: forwards, forwards;
+}
+
+ul.fireflies li:nth-of-type(10) {
+    animation-delay: 1s;
+    animation-duration: 20s, 80s, 15s;
+    animation-fill-mode: both;
+}
+
+ul.fireflies li:nth-of-type(11) {
+    animation-delay: 1s;
+    animation-duration: 20s, 50s, 0.2s;
+    animation-fill-mode: backwards, forwards;
+}
+
+ul.fireflies li:nth-of-type(12) {
+    animation-delay: 1s;
+    animation-duration: 50s, 36s, 0.01s;
+    animation-fill-mode: forwards;
+}
+
+ul.fireflies li:nth-of-type(13) {
+    animation-delay: 1s;
+    animation-duration: 50s, 81s, 3s;
+    animation-fill-mode: forwards, forwards;
+}
+
+ul.fireflies li:nth-of-type(14) {
+    animation-delay: 1s;
+    animation-duration: 70s, 61s, 0.8s;
+    animation-fill-mode: forwards, backwards;
+}
+
+ul.fireflies li:nth-of-type(15) {
+    animation-delay: 1s;
+    animation-duration: 50s, 41s, 20s;
+    animation-fill-mode: backwards, forwards;
+}
+
+ul.fireflies li:nth-of-type(16) {
+    animation-delay: 1s;
+    animation-duration: 20s, 41s, 5s;
+    animation-fill-mode: both;
+}
+
+ul.fireflies li:nth-of-type(17) {
+    animation-delay: 1s;
+    animation-duration: 60s, 41s, 15s;
+    animation-fill-mode: forwards, backwards;
+}
+
+ul.fireflies li:nth-of-type(18) {
+    animation-delay: 2s;
+    animation-duration: 20s, 61s, 0.01s;
+    animation-fill-mode: backwards, forwards;
+}
+
+@keyframes leftright {
+    0%,
+    100% {
+        left: 50%;
+    }
+    16.666% {
+        left: 95%;
+    }
+    33.333% {
+        left: 10%;
+    }
+    50% {
+        left: 60%;
+    }
+    66.666% {
+        left: 70%;
+    }
+    83.333% {
+        left: 5%;
+    }
+}
+
+@keyframes updown {
+    0%,
+    100% {
+        top: 10px;
+    }
+    25% {
+        top: 90%;
+    }
+    50% {
+        top: 50%;
+    }
+    75% {
+        top: 95%;
+    }
+}
+
+@keyframes blinking {
+    0%,
+    100% {
+        box-shadow: 0 0 5px 2px rgb(250, 193, 93), 0 0 5px 5px rgb(255, 242, 63), 0 0 10px 1px rgb(255, 219, 41);
+        height: 0;
+        width: 0;
+    }
+    50% {
+        box-shadow: 0 0 5px 2px rgb(250, 193, 93), 0 0 20px 5px rgb(255, 228, 140), 0 0 10px 1px rgb(255, 219, 41);
+    }
+    75% {
+        box-shadow: 0 0 0px 0px rgb(250, 193, 93), 0 0 0px 0px rgb(255, 228, 140), 0 0 0px 0px rgb(255, 219, 41);
+    }
+}

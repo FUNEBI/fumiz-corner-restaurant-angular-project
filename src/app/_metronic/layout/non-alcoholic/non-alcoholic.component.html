@@ -1,0 +1,32 @@
+<app-navbar>
+</app-navbar>
+
+<div class="container-fluid scroll-modal mt-5 py-3">
+    <div class="modal-body mt-5">
+        <h1 class="text-center">Non Alcoholic Drinks</h1>
+        <hr class="mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-12" *ngFor="let drink of nonAlcoholicDrinks">
+
+                    <img src="{{drink.strDrinkThumb}}" alt="" class="img-fluid">
+                    <small>{{drink.strDrink}}</small>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-12 my-3" *ngFor="let drinks of otherDrinks">
+
+                    <img src="{{drinks.strDrinkThumb}}" alt="" class="img-fluid">
+                    <small>{{drinks.strDrink}}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="large" color="#FFD700" [fullScreen]="true">
+
+</ngx-spinner>
